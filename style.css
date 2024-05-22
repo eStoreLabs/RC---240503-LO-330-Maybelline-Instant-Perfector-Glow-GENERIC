@@ -328,9 +328,6 @@
   margin-top: 11px;
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
 }
-#es-maybelline.es-maybelline #es-maybelline.es-maybelline .es-background-white {
-  background-image: url(images/bg-white.png);
-}
 #es-maybelline.es-maybelline .es-colors {
   display: flex;
   flex-flow: column;
@@ -623,7 +620,7 @@
   padding: 20px 16px;
 }
 #es-maybelline.es-maybelline .es-background {
-  background-image: url(images/bg.jpg);
+  background-image: url(images/bg.png);
 }
 @media screen and (min-width: 668px) {
   #es-maybelline.es-maybelline .es-kv {

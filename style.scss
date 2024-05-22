@@ -401,10 +401,6 @@ $black: #2b2a29;
     }
   }
 
-  #es-maybelline.es-maybelline .es-background-white {
-    background-image: url(images/bg-white.png);
-  }
-
   .es-colors {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -771,7 +767,7 @@ $black: #2b2a29;
   }
 
   .es-background {
-    background-image: url(images/bg.jpg);
+    background-image: url(images/bg.png);
   }
 
   @media screen and (min-width: 668px) {
