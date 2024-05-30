@@ -93,11 +93,11 @@ $black: #2b2a29;
       font-family: inherit;
       font-weight: inherit;
       position: absolute;
-      bottom: 18%;
-      left: 16px;
+      bottom: 17%;
+      left: 30px;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 26px;
+      font-size: 25px;
       font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
       line-height: 1;
@@ -197,8 +197,8 @@ $black: #2b2a29;
 
     &__info {
       position: absolute;
-      top: 10%;
-      left: 10%;
+      top: 8%;
+      left: 13%;
       z-index: 2;
       opacity: 0;
       -webkit-animation: slideleft 0.8s forwards;
@@ -214,7 +214,6 @@ $black: #2b2a29;
 
     &__info-title {
       @include text;
-      margin-bottom: 10px;
       font-family: $secondary;
       font-weight: 400;
       font-size: 25px;
@@ -229,9 +228,8 @@ $black: #2b2a29;
     &__info-label {
       font-family: $secondary;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 160%;
-      padding: 5px 10px;
+      font-size: 19px;
+      padding: 4px 10px;
       text-transform: uppercase;
       color: #fff;
       background: #f0c0cb;
@@ -265,6 +263,7 @@ $black: #2b2a29;
       font-family: inherit;
       font-weight: inherit;
       padding: 32px 16px;
+      padding-bottom: 10px;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 26px;
@@ -330,7 +329,7 @@ $black: #2b2a29;
       padding: 0;
       font-family: $secondary;
       font-weight: 400;
-      font-size: 28px;
+      font-size: 26px;
       text-transform: uppercase;
       text-align: center;
 
@@ -388,13 +387,7 @@ $black: #2b2a29;
       -ms-flex-flow: column;
       flex-flow: column;
       gap: 32px;
-      // position: relative;
       background: #f0dbda;
-    }
-
-    &__image {
-      // display: none;
-      // position: absolute;
     }
 
     &__arrow {
@@ -542,7 +535,7 @@ $black: #2b2a29;
       margin: 0 auto;
       margin-bottom: 64px;
       padding: 0 16px;
-      font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $secondary;
     }
 
     &__title--span {
@@ -894,7 +887,7 @@ $black: #2b2a29;
       font-size: 26px;
       letter-spacing: -1px;
       margin-bottom: 56px;
-      font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $secondary;
       text-align: center;
     }
 
@@ -937,7 +930,6 @@ $black: #2b2a29;
       margin-bottom: 16px;
       padding-bottom: 16px;
       width: 100%;
-      // border-bottom: 1px solid #000;
     }
 
     &__img {
@@ -998,6 +990,7 @@ $black: #2b2a29;
       text-align: center;
       display: inline-block;
     }
+
     &__sup {
       line-height: 0;
       font-size: 0.5em;
@@ -1096,17 +1089,17 @@ $black: #2b2a29;
     }
     .es-features__title {
       padding-top: 75px;
-      font-size: 42px;
+      font-size: 38px;
     }
 
     .es-colors__title {
-      font-size: 42px;
+      font-size: 38px;
     }
     .es-cross__title {
-      font-size: 42px;
+      font-size: 38px;
     }
     .es-ba__title {
-      font-size: 38px;
+      font-size: 36px;
     }
 
     .es-benefits {
@@ -1115,7 +1108,7 @@ $black: #2b2a29;
       margin-bottom: 100px;
 
       &__title {
-        font-size: 58px;
+        font-size: 64px;
       }
 
       &__container {
@@ -1164,13 +1157,16 @@ $black: #2b2a29;
       }
     }
 
-    .es-features__img {
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
+    .es-features {
+      &__img {
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      &__tile {
+        overflow: hidden;
+      }
     }
-    .es-features__tile {
-      overflow: hidden;
-    }
+
     .es-features__single:hover .es-features__img {
       transform: scale(1.2);
     }
@@ -1222,7 +1218,7 @@ $black: #2b2a29;
 
       &__title {
         padding-left: 0;
-        font-size: 40px;
+        font-size: 35px;
       }
 
       &__description {
@@ -1272,8 +1268,14 @@ $black: #2b2a29;
   }
 
   @media screen and (min-width: 940px) {
-    .es-kv__title {
-      font-size: 48px;
+    .es-kv {
+      &__title {
+        font-size: 44px;
+      }
+
+      &__info-title {
+        font-size: 30px;
+      }
     }
 
     .es-features {
@@ -1284,14 +1286,14 @@ $black: #2b2a29;
 
       &__container {
         margin: 0;
-        margin-left: 10px;
+        margin-left: 40px;
         max-width: 630px;
         gap: 10px;
         justify-content: flex-start;
       }
 
       &__single {
-        width: 270px;
+        width: 240px;
       }
 
       &__img-wrapper {
@@ -1329,7 +1331,7 @@ $black: #2b2a29;
       background: none;
 
       &__title {
-        font-size: 38px;
+        font-size: 35px;
         text-align: left;
         padding-left: 15px;
         margin-bottom: 40px;
@@ -1342,6 +1344,18 @@ $black: #2b2a29;
 
     .es-colors {
       margin-bottom: 0;
+
+      &__img {
+        max-width: 20%;
+
+        &--1 {
+          max-width: 40%;
+        }
+
+        &--3 {
+          max-width: 25%;
+        }
+      }
 
       &__single {
         width: 28%;
@@ -1358,15 +1372,11 @@ $black: #2b2a29;
         position: absolute;
         content: '';
         width: 2px;
-        height: 72%;
+        height: 62%;
         top: -26px;
         right: -10px;
         border-right: 2px solid #000;
       }
-    }
-
-    .es-background {
-      background-position: left 70px;
     }
   }
 

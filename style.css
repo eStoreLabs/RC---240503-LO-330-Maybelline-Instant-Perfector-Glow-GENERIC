@@ -59,11 +59,11 @@
   font-family: inherit;
   font-weight: inherit;
   position: absolute;
-  bottom: 18%;
-  left: 16px;
+  bottom: 17%;
+  left: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 25px;
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
   line-height: 1;
@@ -151,8 +151,8 @@
 }
 #es-maybelline.es-maybelline .es-kv__info {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 8%;
+  left: 13%;
   z-index: 2;
   opacity: 0;
   animation: slideleft 0.8s forwards;
@@ -169,7 +169,6 @@
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  margin-bottom: 10px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
   font-size: 25px;
@@ -182,9 +181,8 @@
 #es-maybelline.es-maybelline .es-kv__info-label {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 160%;
-  padding: 5px 10px;
+  font-size: 19px;
+  padding: 4px 10px;
   text-transform: uppercase;
   color: #fff;
   background: #f0c0cb;
@@ -214,6 +212,7 @@
   font-family: inherit;
   font-weight: inherit;
   padding: 32px 16px;
+  padding-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 26px;
@@ -267,7 +266,7 @@
   padding: 0;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -444,7 +443,7 @@
   margin: 0 auto;
   margin-bottom: 64px;
   padding: 0 16px;
-  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 #es-maybelline.es-maybelline .es-colors__title--span {
   font-weight: 300;
@@ -753,7 +752,7 @@
   font-size: 26px;
   letter-spacing: -1px;
   margin-bottom: 56px;
-  font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-align: center;
 }
 #es-maybelline.es-maybelline .es-cross__title--span {
@@ -913,16 +912,16 @@
   }
   #es-maybelline.es-maybelline .es-features__title {
     padding-top: 75px;
-    font-size: 42px;
+    font-size: 38px;
   }
   #es-maybelline.es-maybelline .es-colors__title {
-    font-size: 42px;
+    font-size: 38px;
   }
   #es-maybelline.es-maybelline .es-cross__title {
-    font-size: 42px;
+    font-size: 38px;
   }
   #es-maybelline.es-maybelline .es-ba__title {
-    font-size: 38px;
+    font-size: 36px;
   }
   #es-maybelline.es-maybelline .es-benefits {
     margin-bottom: 0;
@@ -930,7 +929,7 @@
     margin-bottom: 100px;
   }
   #es-maybelline.es-maybelline .es-benefits__title {
-    font-size: 58px;
+    font-size: 64px;
   }
   #es-maybelline.es-maybelline .es-benefits__container {
     display: flex;
@@ -1006,7 +1005,7 @@
   }
   #es-maybelline.es-maybelline .es-howto__title {
     padding-left: 0;
-    font-size: 40px;
+    font-size: 35px;
   }
   #es-maybelline.es-maybelline .es-howto__description {
     padding-right: 0;
@@ -1046,7 +1045,10 @@
 }
 @media screen and (min-width: 940px) {
   #es-maybelline.es-maybelline .es-kv__title {
-    font-size: 48px;
+    font-size: 44px;
+  }
+  #es-maybelline.es-maybelline .es-kv__info-title {
+    font-size: 30px;
   }
   #es-maybelline.es-maybelline .es-features__wrapper {
     display: flex;
@@ -1054,13 +1056,13 @@
   }
   #es-maybelline.es-maybelline .es-features__container {
     margin: 0;
-    margin-left: 10px;
+    margin-left: 40px;
     max-width: 630px;
     gap: 10px;
     justify-content: flex-start;
   }
   #es-maybelline.es-maybelline .es-features__single {
-    width: 270px;
+    width: 240px;
   }
   #es-maybelline.es-maybelline .es-features__img-wrapper {
     margin-right: 3%;
@@ -1090,7 +1092,7 @@
     background: none;
   }
   #es-maybelline.es-maybelline .es-formula__title {
-    font-size: 38px;
+    font-size: 35px;
     text-align: left;
     padding-left: 15px;
     margin-bottom: 40px;
@@ -1100,6 +1102,15 @@
   }
   #es-maybelline.es-maybelline .es-colors {
     margin-bottom: 0;
+  }
+  #es-maybelline.es-maybelline .es-colors__img {
+    max-width: 20%;
+  }
+  #es-maybelline.es-maybelline .es-colors__img--1 {
+    max-width: 40%;
+  }
+  #es-maybelline.es-maybelline .es-colors__img--3 {
+    max-width: 25%;
   }
   #es-maybelline.es-maybelline .es-colors__single {
     width: 28%;
@@ -1113,13 +1124,10 @@
     position: absolute;
     content: "";
     width: 2px;
-    height: 72%;
+    height: 62%;
     top: -26px;
     right: -10px;
     border-right: 2px solid #000;
-  }
-  #es-maybelline.es-maybelline .es-background {
-    background-position: left 70px;
   }
 }
 @media screen and (min-width: 1200px) {
