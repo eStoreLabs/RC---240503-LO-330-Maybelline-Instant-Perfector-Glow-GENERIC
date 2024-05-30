@@ -97,7 +97,7 @@ $black: #2b2a29;
       left: 16px;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 26px;
       font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
       line-height: 1;
@@ -255,6 +255,8 @@ $black: #2b2a29;
 
   .es-features {
     margin-bottom: 48px;
+    background-color: #f0dbda;
+
     &__title {
       margin: 0;
       padding: 0;
@@ -265,10 +267,10 @@ $black: #2b2a29;
       padding: 32px 16px;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: -1px;
       text-align: center;
-      font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $secondary;
     }
 
     &__title--span {
@@ -290,6 +292,8 @@ $black: #2b2a29;
     }
 
     &__container {
+      max-width: 630px;
+      margin: 0 auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -301,8 +305,13 @@ $black: #2b2a29;
       gap: 32px 0px;
     }
 
+    &__bg-img {
+      display: none;
+    }
+
     &__single {
       width: 307px;
+      position: relative;
     }
 
     &__img {
@@ -312,18 +321,23 @@ $black: #2b2a29;
     }
 
     &__benefit {
+      position: absolute;
+      min-width: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       margin: 0;
       padding: 0;
-      line-height: inherit;
-      color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
+      font-family: $secondary;
+      font-weight: 400;
+      font-size: 28px;
       text-transform: uppercase;
-      padding: 16px;
       text-align: center;
+
+      &--bold {
+        display: block;
+        font-weight: 700;
+      }
     }
 
     &__text {
@@ -351,11 +365,11 @@ $black: #2b2a29;
       margin: 0;
       padding: 0;
       padding-top: 30px;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: -1px;
       font-family: $secondary;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 36px;
       text-transform: uppercase;
       text-align: center;
       color: #000;
@@ -476,7 +490,7 @@ $black: #2b2a29;
       padding-right: 15px;
       font-family: $secondary;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 26px;
       line-height: 111%;
       text-transform: uppercase;
       color: #000;
@@ -508,7 +522,9 @@ $black: #2b2a29;
     -ms-flex-align: center;
     align-items: center;
     padding: 0 16px;
+    padding-top: 50px;
     margin-bottom: 80px;
+    background: #f0dbda;
 
     &__title {
       margin: 0;
@@ -519,7 +535,7 @@ $black: #2b2a29;
       font-weight: inherit;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: -1px;
       text-align: center;
       display: inline-block;
@@ -542,6 +558,7 @@ $black: #2b2a29;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      align-items: baseline;
       gap: 32px 16px;
     }
 
@@ -591,7 +608,7 @@ $black: #2b2a29;
       padding: 16px 5px;
       text-align: center;
       text-transform: uppercase;
-      font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $regular, sans-serif;
       background: #000;
       color: #fff;
       display: block;
@@ -602,8 +619,6 @@ $black: #2b2a29;
   }
 
   .es-ba {
-    margin-bottom: 80px;
-
     &__sup {
       line-height: 0;
       font-size: 0.5em;
@@ -622,13 +637,13 @@ $black: #2b2a29;
       font-weight: inherit;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: -1px;
       text-align: center;
       margin: 0 auto;
       margin-bottom: 24px;
       padding: 0 16px;
-      font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: $secondary;
     }
 
     &__title--span {
@@ -787,11 +802,15 @@ $black: #2b2a29;
     background-color: #fbebeb;
     padding-bottom: 30px;
 
+    &__content {
+      padding-top: 30px;
+    }
+
     &__title {
       @include text;
       font-family: $secondary;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 26px;
       line-height: 111%;
       text-transform: uppercase;
       text-align: center;
@@ -872,7 +891,7 @@ $black: #2b2a29;
       font-weight: inherit;
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: -1px;
       margin-bottom: 56px;
       font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
@@ -884,6 +903,8 @@ $black: #2b2a29;
     }
 
     &__container {
+      max-width: 700px;
+      margin: 0 auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -916,7 +937,7 @@ $black: #2b2a29;
       margin-bottom: 16px;
       padding-bottom: 16px;
       width: 100%;
-      border-bottom: 1px solid #000;
+      // border-bottom: 1px solid #000;
     }
 
     &__img {
@@ -955,13 +976,22 @@ $black: #2b2a29;
       padding: 0;
       line-height: inherit;
       color: inherit;
-      font-size: 20px;
       font-family: inherit;
       font-weight: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 16px 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $regular, sans-serif;
       background: #000;
       color: #fff;
+      display: block;
       text-decoration: none;
-      padding: 16px 40px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      padding: 16px 15px;
+      width: 100%;
       font-weight: 700;
       text-transform: uppercase;
       font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
@@ -1065,11 +1095,10 @@ $black: #2b2a29;
       bottom: 32px;
     }
     .es-features__title {
+      padding-top: 75px;
       font-size: 42px;
     }
-    .es-benefits__title {
-      font-size: 58px;
-    }
+
     .es-colors__title {
       font-size: 42px;
     }
@@ -1082,6 +1111,12 @@ $black: #2b2a29;
 
     .es-benefits {
       margin-bottom: 0;
+      background: #f0dbda;
+      margin-bottom: 100px;
+
+      &__title {
+        font-size: 58px;
+      }
 
       &__container {
         display: -webkit-box;
@@ -1096,22 +1131,39 @@ $black: #2b2a29;
         align-items: center;
         gap: 0;
       }
+
       &__image {
         display: block;
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
       }
+
       &__content {
+        max-width: 450px;
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        margin-right: -277px;
-        padding-left: 37px;
         -ms-flex-positive: 1;
         flex-grow: 1;
+        order: 1;
+        position: relative;
+      }
+
+      &__arrow {
+        position: absolute;
+        width: 60%;
+        left: 102%;
+        transform: translate(-50%, -10%);
+      }
+
+      &__title {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-top: -50px;
       }
     }
+
     .es-features__img {
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
@@ -1122,14 +1174,31 @@ $black: #2b2a29;
     .es-features__single:hover .es-features__img {
       transform: scale(1.2);
     }
-    .es-colors__img {
-      -webkit-transition: all 0.3s;
-      transition: all 0.3s;
+
+    .es-colors {
+      padding-bottom: 80px;
+
+      &__container {
+        align-items: baseline;
+      }
+
+      &__img {
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      &__single:hover &__img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+      &__text {
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: 400;
+        min-height: 110px;
+      }
     }
-    .es-colors__single:hover .es-colors__img {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
+
     .es-cross__img {
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
@@ -1145,25 +1214,171 @@ $black: #2b2a29;
     .es-cross__single:hover .es-cross__link {
       color: #ca549a;
     }
+
+    .es-howto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__title {
+        padding-left: 0;
+        font-size: 40px;
+      }
+
+      &__description {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &__img {
+        padding-left: 50px;
+        max-width: 430px;
+      }
+
+      &__content {
+        margin-top: -120px;
+        padding-left: 50px;
+        padding-right: 30px;
+      }
+    }
+
+    .es-formula {
+      display: flex;
+
+      &__content {
+        min-width: 400px;
+        padding-right: 30px;
+      }
+
+      &__img {
+        max-width: 450px;
+      }
+
+      &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      &__icon-title {
+        min-height: 40px;
+      }
+    }
+
+    .es-ba {
+      margin-bottom: 100px;
+    }
   }
 
   @media screen and (min-width: 940px) {
     .es-kv__title {
       font-size: 48px;
     }
+
+    .es-features {
+      &__wrapper {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      &__container {
+        margin: 0;
+        margin-left: 10px;
+        max-width: 630px;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+
+      &__single {
+        width: 270px;
+      }
+
+      &__img-wrapper {
+        margin-right: 3%;
+      }
+
+      &__bg-img {
+        display: block;
+        @include img;
+      }
+    }
+
     .es-ba {
-      padding: 32px 16px;
+      padding: 32px 0px;
       border-radius: 25px;
-      max-width: 900px;
       margin-inline: auto;
 
       &__container {
         margin-bottom: 64px;
+        gap: 5px;
       }
-      &__before,
-      &__after {
-        min-width: 460px;
+
+      &__before {
+        max-width: 24%;
       }
+    }
+
+    .es-cross {
+      &__single {
+        max-width: 230px;
+      }
+    }
+
+    .es-formula {
+      background: none;
+
+      &__title {
+        font-size: 38px;
+        text-align: left;
+        padding-left: 15px;
+        margin-bottom: 40px;
+      }
+
+      &__content {
+        padding-top: 0;
+      }
+    }
+
+    .es-colors {
+      margin-bottom: 0;
+
+      &__single {
+        width: 28%;
+        position: relative;
+      }
+
+      &__container {
+        width: 100%;
+        gap: 20px;
+      }
+
+      &__single:nth-child(1)::after,
+      &__single:nth-child(2)::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 72%;
+        top: -26px;
+        right: -10px;
+        border-right: 2px solid #000;
+      }
+    }
+
+    .es-background {
+      background-position: left 70px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .es-cross {
+      &__container {
+        max-width: none;
+      }
+    }
+
+    .es-ba {
+      margin-bottom: 0;
     }
   }
 
