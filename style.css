@@ -551,11 +551,32 @@
   z-index: 2;
   text-align: center;
   margin-top: -10px;
+  font-family: "Barlow Condensed", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #000;
+}
+#es-maybelline.es-maybelline .es-ba__before-text {
+  position: absolute;
+  top: 0;
+  left: 4%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#es-maybelline.es-maybelline .es-ba__after-text {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
 }
 #es-maybelline.es-maybelline .es-ba__before:hover .es-ba__img {
   transform: scale(1.1);
@@ -1137,6 +1158,9 @@
   }
   #es-maybelline.es-maybelline .es-ba {
     margin-bottom: 0;
+  }
+  #es-maybelline.es-maybelline .es-ba__before--title {
+    margin-top: 5px;
   }
 }
 @keyframes appear {

@@ -667,11 +667,34 @@ $black: #2b2a29;
       z-index: 2;
       text-align: center;
       margin-top: -10px;
+      font-family: $secondary;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 20px;
       text-transform: uppercase;
       text-align: center;
       color: #000;
+    }
+
+    &__before-text {
+      position: absolute;
+      top: 0;
+      left: 4%;
+      font-family: $secondary;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    &__after-text {
+      position: absolute;
+      top: 0;
+      right: 4%;
+      font-family: $secondary;
+      font-weight: 400;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #fff;
     }
 
     &__before:hover .es-ba__img {
@@ -1390,6 +1413,12 @@ $black: #2b2a29;
 
     .es-ba {
       margin-bottom: 0;
+    }
+
+    .es-ba {
+      &__before--title {
+        margin-top: 5px;
+      }
     }
   }
 
