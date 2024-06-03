@@ -1327,6 +1327,7 @@ $black: #2b2a29;
       &__bg-img {
         display: block;
         @include img;
+        max-width: 280px;
       }
     }
 
